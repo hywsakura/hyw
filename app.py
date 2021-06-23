@@ -11,13 +11,19 @@ import csv, re, operator
 app = Flask(__name__)
 
 person = {
+    'title':'我的简历',
     'first_name': '毅文',
     'last_name' : '何',
-    'address' : 'Hogwarts · Alnwick Castle · England',
+    'name':'何毅文',
+    'sx':'hyw',
+    'drive':'123 My Place Drive',
+    'address' : 'Hogwarts · Alnwick Castle',
     'job': 'student',
     'tel': '123123123',
     'email': '123123123@yahoo.com',
-    'description' : 'Suite à une expérience internationale en développement web et dans le domaine des arts, l’impact de l’intelligence artificielle dans nos vies me surprend de jour en jour. \n Aujourd’hui, je souhaite changer de cap et comprendre les secrets que recèlent nos données. J’aimerais mettre à profit ces découvertes au service des entreprises/associations à dimension sociale.',
+    'profile':'个人简介',
+    'description' :'''本人性格开朗、稳重、有活力，待人热情、真诚;工作认真负责，积极主动，能吃苦耐劳，用于承受压力，勇于创新;有很强的组织能力和团队协作精神，具有较强的适
+    应能力;纪律性强，工作积极配合;意志坚强，具有较强的无私奉献精神。对待工作认真负责，善于沟通、协调有较强的组织能力与团队精神;活泼开朗、乐观上进、有爱心并善于施教并行;上进心强、勤于学习能不断提高自身的能力与综合素质。''',
     'social_media' : [
         {
             'link': 'https://www.facebook.com/nono',
