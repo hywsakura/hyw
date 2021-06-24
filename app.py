@@ -110,7 +110,7 @@ def cv(person=person):
 
 @app.route('/callback', methods=['POST', 'GET'])
 def cb():
-    return gm(request.args.get('data'))
+    return gm3(request.args.get('data'))
 
 
 # @app.route('/chart2')
