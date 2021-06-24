@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        function cb(selection) {
+            $.getJSON({
+                url: "/callback", data: { 'data': selection }, success: function (result) {
+                    Plotly.newPlot('chart', result, {});;
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+    
+    <input type="text" id="fname" name="fname" onchange="cb(this.value)">
+    <div id="chart" class="chart"></div>
+</body>
+
+<script>
+    d = {{ graphJSON | safe }};
+    Plotly.newPlot('chart', d, {});
+</script>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+
+    <input type="text" id="fname1" name="fname1" onchange="cb(this.value)">
+    <div id="chart1" class="chart1"></div>
+</body>
+
+<script>
+    d = {{ graphJSON1 | safe }};
+    Plotly.newPlot('chart1', d, {});
+</script>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+
+    <input type="text" id="fname2" name="fname2" onchange="cb(this.value)">
+    <div id="chart2" class="chart2"></div>
+</body>
+
+<script>
+    d = {{ graphJSON2 | safe }};
+    Plotly.newPlot('chart2', d, {});
+</script>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+
+    <input type="text" id="fname3" name="fname3" onchange="cb(this.value)">
+    <div id="chart3" class="chart3"></div>
+</body>
+
+<script>
+    d = {{ graphJSON3 | safe }};
+    Plotly.newPlot('chart3', d, {});
+</script>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+
+    <input type="text" id="fname4" name="fname4" onchange="cb(this.value)">
+    <div id="chart4" class="chart4"></div>
+</body>
+
+<script>
+    d = {{ graphJSON4 | safe }};
+    Plotly.newPlot('chart4', d, {});
+</script>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+
+    <input type="text" id="fname5" name="fname5" onchange="cb(this.value)">
+    <div id="chart5" class="chart5"></div>
+</body>
+
+<script>
+    d = {{ graphJSON5 | safe }};
+    Plotly.newPlot('chart5', d, {});
+</script>
+
+<body style="font-family:arial, sans-serif">
+    <h1>1952-2007年的各国GDP可视化</h1>
+    <h2>输入国家如：India或China（大写字母开头）</h2>
+
+    <input type="text" id="fname6" name="fname6" onchange="cb(this.value)">
+    <div id="chart6" class="chart6"></div>
+</body>
+
+<script>
+    d = {{ graphJSON6 | safe }};
+    Plotly.newPlot('chart6', d, {});
+</script>
+
+</html>
