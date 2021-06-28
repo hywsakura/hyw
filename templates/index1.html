@@ -17,8 +17,8 @@
         <div class="title text-center">
           <h1>{{person.title}}</h1>
           <h3>{{person.name}}</h3>
-          <h4><a href="{{url_for('chart4')}}" target="_blank">企鹅数据分析</a></h4>
-          <h4><a href="{{url_for('chart3')}}" target="_blank">项目合作分析</a></h4>
+<!--          <h4><a href="{{url_for('chart4')}}" target="_blank">企鹅数据分析</a></h4>-->
+<!--          <h4><a href="{{url_for('chart3')}}" target="_blank">项目合作分析</a></h4>-->
           <hr />
           <ul class="list-inline">
             <li><i class="devicon-laravel-plain colored"></i></li>
@@ -41,19 +41,18 @@
               <p>邮箱：{{person.email}}</p>
             </div>
             <div class="col-md-3 col-sm-3">
-              <p>Development</p>
-              <p>Design</p>
-              <p>Linux Admin</p>
+              <p>性别：{{person.sx}}</p>
+              <p>民族：{{person.mz}}</p>
+              <p>籍贯：{{person.jg}}</p>
             </div>
             <div class="col-md-3 col-sm-3">
-              <p>Agile Development</p>
-              <p>Scrum of Scrum</p>
-              <p>Frontend Development</p>
+              <p>学校名称：{{person.drive}}</p>
+              <p>就读时间：{{person.time}}</p>
+              <p>所学专业：{{person.zy}}</p>
             </div>
             <div class="col-md-3 col-sm-3">
-              <p>Code Review</p>
-              <p>Peer Review</p>
-              <p>Fullstack Development</p>
+              <p>求职意向：{{person.job}}</p>
+              <p>期望月薪：{{person.pay}}</p>
             </div>
           </div>
           
@@ -62,40 +61,42 @@
         
         <!-- work experience section -->
         <div class="work-experience">
-          <h2 class="text-center">Work Experience</h2>
+          <h2 class="text-center">项目经验</h2>
           <div class="row experience-title">
             <div class="col-md-9">
-              <h3>Some company</h3>
-              <h4>Program Manager</h4>
-              <h5>Some project</h5>
+              <h3>可视化研究</h3>
+              <h4>项目管理者：何毅文</h4>
+              <h5>项目简介：</h5>
             </div>
             <div class="col-md-3">
-              <h3>June 2015 - Present</h3>
+              <h3>June 2021 - Present</h3>
             </div>
           </div>
           <div class="row experience-summary">
             <div class="col-md-12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat ullam, pariatur, iste sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam corporis, accusamus repudiandae nihil! Sed?</p>
+              <p>该项目是对不同的数据集通过对应的代码来实现可视化研究，包括将数据集以折线图、散点图等图表的方式呈现出来。用到Web相关知识以及python编程技术，同时需要一定的网络爬取技术。包括利用网页源代码查找网页布局格式，经过数据分析来确定可视化图表的属性等。数据集可视化如下：</p>
+              <h4><a href="{{url_for('chart4')}}" target="_blank">企鹅数据分析</a></h4>
+              <h4><a href="{{url_for('chart3')}}" target="_blank">项目方法数据分析</a></h4>
             </div>
           </div>
           
           <!-- Corasent -->
           <div class="row experience-title">
             <div class="col-md-9">
-              <h3>Some company</h3>
-              <h4>Associate Project Manager</h4>
-              <h5>Some project</h5>
+              <h3>坦克大战小游戏开发</h3>
+              <h4>项目管理者：何毅文</h4>
+              <h5>项目简介：</h5>
             </div>
             <div class="col-md-3">
-              <h3>Oct 2012 - Jun 2015</h3>
+              <h3>March 2021 - June 2021</h3>
             </div>
           </div>
           <div class="row experience-summary">
             <div class="col-md-12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sequi voluptatibus similique repellat, qui officiis excepturi odit esse magni veritatis voluptatum iste molestias illum labore fugit nihil, modi inventore. Excepturi!:</p>
+              <p>时至今日，中国乃至世界电子游戏产业的发展可以说是非常迅速的，并且随着网络的发展，越来越多的网络游戏也开始盛行。电子游戏相比于传统休闲娱乐手段更具有互动性，能够让用户感到身临其境，从而获得心理上的满足。我们通过制作这一个游戏，不仅能够提供给大众一个休息的方式，同时电子游戏现在也占据了相当大的市场，我们想要去呈现一个新旧游戏并存的发展格局。我们通过使用当前热门的编程语言Python配合强大的pygame库来达到编写这么一个小程序的目的，开发是由我们的三人小团队完成的。</p>
               <ul>
-                <li>Lead - UI design and development.</li>
-                <li>WordPress expert - Configuration, maintenance and custom development.</li>
+                <li>知乎：<a href="{{ person.social_media[2].link }}" target="_blank">{{ person.social_media[2].link }}</a></li>
+                <li>CSDN：<a href="{{ person.social_media[3].link }}" target="_blank">{{ person.social_media[3].link }}</a></li>
               </ul>
             </div>
           </div>

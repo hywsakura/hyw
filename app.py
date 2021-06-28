@@ -12,13 +12,16 @@ app = Flask(__name__)
 
 person = {
     'title': '我的简历',
-    'first_name': '毅文',
-    'last_name': '何',
+    'time': '2018~2022',
+    'zy': '软件工程',
     'name': '何毅文',
-    'sx': 'hyw',
-    'drive': '123 My Place Drive',
-    'address': 'Hogwarts · Alnwick Castle',
-    'job': 'student',
+    'sx': '男',
+    'mz':'汉族',
+    'jg':'湖北武汉',
+    'drive': '湖北师范大学',
+    'address': '霍格沃茨  安尼克堡',
+    'pay':'20k~25k',
+    'job': '游戏开发工程师',
     'tel': '123123123',
     'email': '123123123@yahoo.com',
     'profile': '个人简介',
@@ -34,11 +37,11 @@ person = {
             'icon': 'fa-github'
         },
         {
-            'link': 'linkedin.com/in/nono',
+            'link': 'https://zhuanlan.zhihu.com/p/382597679',
             'icon': 'fa-linkedin-in'
         },
         {
-            'link': 'https://twitter.com/nono',
+            'link': 'https://blog.csdn.net/hyw_icy/article/details/117743322',
             'icon': 'fa-twitter'
         }
     ],

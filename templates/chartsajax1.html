@@ -17,11 +17,23 @@
 </head>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（折线图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+<center><h1>数据可视化分析</h1></center>
+    <h2>数据字段简介</h2>
+    <p>1.species:企鹅种类</p>
+    <p>2.island:企鹅居住地</p>
+    <p>3.bill_length_mm:企鹅身高</p>
+    <p>4.bill_depth_mm:企鹅身宽</p>
+    <p>5.body_mass_g:企鹅体重</p>
+    <p>6.sex:企鹅性别</p>
+    <h2>不同地区企鹅体型的影响因素（折线图）</h2>
+    <p>折线图是排列在工作表的列或行中的数据可以绘制到折线图中。折线图可以显示随时间（根据常用比例设置）而变化的连续数据，因此非常适用于显示在相等时间间隔下数据的趋势。</p>
+    <p>在折线图中，类别数据沿水平轴均匀分布，所有值数据沿垂直轴均匀分布。</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
     
-    <input type="text" id="fname7" name="fname7" onchange="cb(this.value)">
+<!--    <input type="text" id="fname7" name="fname7" onchange="cb(this.value)">-->
     <div id="chart7" class="chart7"></div>
+    <p>该数据集以企鹅的身材长宽大小作为X、Y轴，我们通过企鹅的所属的不同地区来判断企鹅身材情况并绘制折线图。我们可以得出诸如biscoe地区的企鹅几乎没有较大的体型的结论等。</p>
+    <p>通过可视化图标可以看出地区对于企鹅身材的影响较大，地区不同会影响企鹅的横向宽度。</p>
 </body>
 
 <script>
@@ -30,11 +42,14 @@
 </script>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（条形图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+    <h2>不同地区企鹅体型的影响因素（条形图）</h2>
+    <p>条形图是用宽度相同的条形的高度或长短来表示数据多少的图形。条形图可以横置或纵置，纵置时也称为柱形图。此外，条形图有简单条形图、复式条形 图等形式。</p>
+    <p>图形元素：组数、组宽度、组限</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
 
-    <input type="text" id="fname8" name="fname8" onchange="cb(this.value)">
+<!--    <input type="text" id="fname8" name="fname8" onchange="cb(this.value)">-->
     <div id="chart8" class="chart8"></div>
+    <p>条形图直观地给出了不同宽度下的企鹅身高分布情况，不同地区的企鹅在每个Y轴上所显示出来的长度不尽相同，通过条形图我们可以更直观地对比企鹅的身高与宽度。</p>
 </body>
 
 <script>
@@ -43,11 +58,14 @@
 </script>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（散点图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+    <h2>不同地区企鹅体型的影响因素（散点图）</h2>
+    <p>散点图是指在回归分析中，数据点在直角坐标系平面上的分布图，散点图表示因变量随自变量而变化的大致趋势，据此可以选择合适的函数对数据点进行拟合。</p>
+    <p>用两组数据构成多个坐标点，考察坐标点的分布，判断两变量之间是否存在某种关联或总结坐标点的分布模式。散点图将序列显示为一组点。值由点在图表中的位置表示。类别由图表中的不同标记表示。散点图通常用于比较跨类别的聚合数据。</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
 
-    <input type="text" id="fname9" name="fname9" onchange="cb(this.value)">
+<!--    <input type="text" id="fname9" name="fname9" onchange="cb(this.value)">-->
     <div id="chart9" class="chart9"></div>
+    <p>通过散点图我们可以直观地发现biscoe地区的企鹅身体长度较宽，但身高普遍较低。Dream地区的身高普遍较高，宽度较宽，也就是说该地区企鹅体积较大。</p>
 </body>
 
 <script>
@@ -56,11 +74,14 @@
 </script>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（堆积区域图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+    <h2>不同地区企鹅体型的影响因素（堆积区域图）</h2>
+    <p>面积图又称区域图，强调数量随时间而变化的程度，也可用于引起人们对总值趋势的注意。堆积面积图和百分比堆积面积图还可以显示部分与整体的关系。</p>
+    <p>图表元素：图表区、标题、绘图区、图例、坐标轴、坐标轴标题、网格线、数据标签、数据系列（区域）</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
 
-    <input type="text" id="fname10" name="fname10" onchange="cb(this.value)">
+<!--    <input type="text" id="fname10" name="fname10" onchange="cb(this.value)">-->
     <div id="chart10" class="chart10"></div>
+    <p>通过面积图显示我们发现biscoe地区length大约在20以下，由此可以推算出普遍平均面积大概是在900~1200之间，但仍有不少的个例体积处于较高水平。</p>
 </body>
 
 <script>
@@ -69,11 +90,15 @@
 </script>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（三元散点图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+    <h2>不同地区企鹅体型的影响因素（三元散点图）</h2>
+    <p>三元图，又称三元相图（Ternary plot）有三个坐标轴，与直角坐标系不同，它的三个坐标轴“首尾相接”成夹角为60度的等边三角形。“元”即成分，或部分，三元图主要用来展示不同样本的三种成分的比例，在物理化学中比较常见，如合金中不同组分的比例等。</p>
+    <p>三元图数据的特点是三种成分比例的和必须为一定值（常见为1），当然，这也由等边三角性的几何性质决定的。</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
 
-    <input type="text" id="fname11" name="fname11" onchange="cb(this.value)">
+<!--    <input type="text" id="fname11" name="fname11" onchange="cb(this.value)">-->
     <div id="chart11" class="chart11"></div>
+    <p>由三元散点图可以看出，如果以身高为判断条件的画，不同地区的企鹅在体积和体重的分布上及为接近，这也就说明企鹅这种物种在体型上是有上限的。</p>
+    <p>随宽度和身高增加，企鹅体积和质量成正相关增长。</p>
 </body>
 
 <script>
@@ -82,11 +107,13 @@
 </script>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（极坐标散点图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+    <h2>不同地区企鹅体型的影响因素（极坐标散点图）</h2>
+    <p>即便自变量为连续性变量，仍然可以使用极坐标散点图。也就是说极坐标散点图通过散点的疏密程度和变化趋势表示二个连续变量的数量关系。不仅如此，如果有三个变量，并且自变量为分类变量，极坐标散点图通过对点的形状或者点的颜色来区分，即可了解这些变量之间的关系。</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
 
-    <input type="text" id="fname12" name="fname12" onchange="cb(this.value)">
+<!--    <input type="text" id="fname12" name="fname12" onchange="cb(this.value)">-->
     <div id="chart12" class="chart12"></div>
+    <p>从极坐标散点图我们不难看出，不同种类不同性别的企鹅，在身高以及宽度的分布上是较为平均的，每一个阶段都存在较为平均数量的企鹅。由此我们可以推断出种类和性别对企鹅体型的影响并不是特别大。</p>
 </body>
 
 <script>
@@ -95,11 +122,13 @@
 </script>
 
 <body style="font-family:arial, sans-serif">
-    <h1>不同性别企鹅体型的影响因素（三维散点图）</h1>
-    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>
+    <h2>不同地区企鹅体型的影响因素（三维散点图）</h2>
+    <p>在散点图矩阵中虽然可以同时观察多个变量间的联系，但是两两进行平面散点图的观察的，有可能漏掉一些重要的信息。三维散点图就是在由3个变量确定的三维空间中研究变量之间的关系，由于同时考虑了3个变量，常常可以发现在两维图形中发现不了的信息。</p>
+<!--    <h2>输入性别如：MALE或FEMALE（大写字母）</h2>-->
 
-    <input type="text" id="fname13" name="fname13" onchange="cb(this.value)">
+<!--    <input type="text" id="fname13" name="fname13" onchange="cb(this.value)">-->
     <div id="chart13" class="chart13"></div>
+    <p>通过三维散点图的分层，我们进一步发现了不同种类的企鹅身材方面的差距，我们不难发现，同一种类的企鹅身材几乎接近，偶尔会有个例不一样，而不同种类的企鹅在对比之下还是有一定的差异，尤其是每个种类的企鹅体型集中在哪一片区域这一点的差别较为明显。</p>
 </body>
 
 <script>
