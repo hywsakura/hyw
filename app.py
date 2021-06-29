@@ -34,7 +34,7 @@ person = {
         },
         {
             'link': 'https://github.com/nono',
-            'icon': 'fa-github'
+            'icon': 'fa-github1'
         },
         {
             'link': 'https://zhuanlan.zhihu.com/p/382597679',
