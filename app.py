@@ -33,8 +33,8 @@ person = {
             'icon': 'fa-facebook-f'
         },
         {
-            'link': 'https://github.com/nono',
-            'icon': 'fa-github1'
+            'link': 'https://codepen.io/neoelemento/pen/bVZRRv',
+            'icon': 'fa-github'
         },
         {
             'link': 'https://zhuanlan.zhihu.com/p/382597679',
